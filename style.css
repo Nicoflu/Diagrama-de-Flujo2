@@ -1,0 +1,162 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+html, body {
+  overflow: hidden;
+}
+
+.background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  height: 130vh;
+  position: fixed;
+  width: 100%;
+  transform: translateY(30vh);
+  transition: all 1.2s cubic-bezier(0.22, 0.44, 0, 1);
+}
+.background:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.background:first-child {
+  background-image: url(https://media.istockphoto.com/id/1202819950/es/vector/diagrama-de-flujo-de-infograf%C3%ADas-esquema-de-sombras-de-colores.jpg?s=612x612&w=0&k=20&c=e-4JP9cCHk_O3-zTTw5gExDg5k68trz5LnnaDRbkWw4=);
+  transform: translateY(-15vh);
+}
+.background:first-child .content-wrapper {
+  transform: translateY(15vh);
+}
+.background:nth-child(2) {
+  background-image: url(https://media.istockphoto.com/id/490245946/es/foto/concepto-de-diagrama-de-flujo-diagrama.jpg?s=612x612&w=0&k=20&c=LltxnXayx-OYxd3exaKkCGwM6PWKFlxPGtnoq3_hhNs=);
+}
+.background:nth-child(3) {
+  background-image: url(https://media.istockphoto.com/id/1360521207/es/foto/hombre-de-negocios-que-utiliza-un-an%C3%A1lisis-inform%C3%A1tico-para-la-automatizaci%C3%B3n-de-procesos-y.jpg?s=612x612&w=0&k=20&c=GGXnoQcXz-9JaWKmKhaIlGT1b4k0lF63J1WMkCegBaI=);
+}
+.background:nth-child(4) {
+  background-image: url(https://media.istockphoto.com/id/1172252198/es/foto/interfaz-de-negocio-digital-e-iconos.jpg?s=612x612&w=0&k=20&c=w7aDkxuWIRuEUfBenB90pNuRJoIXALYsYHguCHHq3vQ=);
+}
+.background:nth-child(5) {
+  background-image: url(https://static.platzi.com/media/user_upload/5555-56bcde7f-ab7a-438e-ac3c-b289715a319b.jpg);
+}
+.background:nth-child(6) {
+  background-image: url(https://media.istockphoto.com/id/1285142483/es/foto/gesti%C3%B3n-de-procesos-de-negocio-con-diagrama-de-flujo-para-mejorar-la-eficiencia-y-la.jpg?s=612x612&w=0&k=20&c=CjQa9ux1uGy-QhXO5GpqOYOajmo6h6PsPKh8nUo-BxQ=);
+}
+.background:nth-child(7) {
+  background-image: url(https://media.istockphoto.com/id/1162297462/es/foto/concepto-de-proceso-de-negocio-y-flujo-de-trabajo.jpg?s=612x612&w=0&k=20&c=1jSeR1xExSf8u_u76AHp8Wp5kViT8kqwq-Ol2lFYNSA=);
+}
+.background:nth-child(8) {
+  background-image: url(https://www.areatecnologia.com/informatica/imagenes/ejemplo_diagrama-de_flujo_mayorymenor.jpg);
+}
+.background:nth-child(9) {
+  background-image: url(https://images.edrawsoft.com/images2019/articles/maker/flowchart/wheel-pic2.png);
+}
+.background:nth-child(10) {
+  background-image: url(https://media.istockphoto.com/id/1283704330/es/foto/organigrama-con-estructura-jer%C3%A1rquica-de-equipos-y-empleados-en-la-empresa-gerentes-de.jpg?s=612x612&w=0&k=20&c=iu3bCyBmbHwtwOuEM3Ezrz-pRSADnYRUjbGBdBkT8lI=);
+}
+.background:nth-child(11) {
+  background-image: url(https://media.istockphoto.com/id/1200327611/es/foto/tema-de-cumplimiento-con-la-persona-que-usa-la-computadora-port%C3%A1til.jpg?s=612x612&w=0&k=20&c=nOBXn311hov4632tIzgigaSN9ZrGu-JNrGazy1antFk=);
+}
+.background:nth-child(12) {
+  background-image: url(https://media.istockphoto.com/id/539953552/es/foto/proceso-de-negocio-y-flujo-de-trabajo-de-automatizaci%C3%B3n-con-organigrama-hombre-de-negocios-en.jpg?s=612x612&w=0&k=20&c=0RShn6fW7Df7EkHXiU5Y5GsRxwuakhP-ODjVG6XlNpA=);
+}
+.background:nth-child(13) {
+  background-image: url(https://media.istockphoto.com/id/1283704330/es/foto/organigrama-con-estructura-jer%C3%A1rquica-de-equipos-y-empleados-en-la-empresa-gerentes-de.jpg?s=612x612&w=0&k=20&c=iu3bCyBmbHwtwOuEM3Ezrz-pRSADnYRUjbGBdBkT8lI=);
+}
+
+/* Set stacking context of slides */
+.background:nth-child(1) {
+  z-index: 13;
+}
+
+.background:nth-child(2) {
+  z-index: 12;
+}
+
+.background:nth-child(3) {
+  z-index: 11;
+}
+.background:nth-child(4) {
+  z-index: 10;
+}
+.background:nth-child(5) {
+  z-index: 9;
+}
+.background:nth-child(6) {
+  z-index: 8;
+}
+.background:nth-child(7) {
+  z-index: 7;
+}
+.background:nth-child(8) {
+  z-index: 6;
+}
+.background:nth-child(9) {
+  z-index: 5;
+}
+.background:nth-child(10) {
+  z-index: 4;
+}
+.background:nth-child(11) {
+  z-index: 3;
+}
+.background:nth-child(12) {
+  z-index: 2;
+}
+.background:nth-child(13) {
+  z-index: 1;
+}
+
+.content-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: column nowrap;
+  color: #fff;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  transform: translateY(40vh);
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1);
+}
+.content-title {
+  font-size: 12vh;
+  line-height: 1.4;
+}
+
+.background.up-scroll {
+  transform: translate3d(0, -15vh, 0);
+}
+.background.up-scroll .content-wrapper {
+  transform: translateY(15vh);
+}
+.background.up-scroll + .background {
+  transform: translate3d(0, 30vh, 0);
+}
+.background.up-scroll + .background .content-wrapper {
+  transform: translateY(30vh);
+}
+
+.background.down-scroll {
+  transform: translate3d(0, -130vh, 0);
+}
+.background.down-scroll .content-wrapper {
+  transform: translateY(40vh);
+}
+.background.down-scroll + .background:not(.down-scroll) {
+  transform: translate3d(0, -15vh, 0);
+}
+.background.down-scroll + .background:not(.down-scroll) .content-wrapper {
+  transform: translateY(15vh);
+}
